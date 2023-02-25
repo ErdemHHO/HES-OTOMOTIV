@@ -6,7 +6,7 @@ import CategoryForm from '../components/CategoryForm'
 import SeriesForm from '../components/SeriesForm'
 import CarForm from '../components/CarForm'
 import Tables from '../components/Tables'
-
+// import CkEditor from '../components/CkEditor'
 
 function Admin() {
   return (
@@ -17,6 +17,7 @@ function Admin() {
         <SeriesForm />
         <CarForm />
         <Tables />
+        {/* <CkEditor /> */}
     </div>
   )
 }

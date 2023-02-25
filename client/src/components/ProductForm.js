@@ -1,13 +1,22 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState,useCallback } from 'react';
+import { useDropzone } from 'react-dropzone';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import CKEditor from '@ckeditor/ckeditor5-react';
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+
 
 
 function ProductForm() {
+    const onDrop = useCallback(acceptedFiles => {
+        // Do something with the uploaded file
+      }, []);
+    const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
   const [isChecked, setIsChecked] = useState(false);
 
   function handleCheckboxChange() {
@@ -94,6 +103,21 @@ function ProductForm() {
             </Col>
         </Row>
     </Container>
+    <Form.Group className="mb-3" controlId="textInput">
+        <Form.Label>Fotoğraf:</Form.Label>
+        <Form.Control type="file" className='form-control-file' placeholder="Fotoğraf Yükleyiniz" multiple/>
+    </Form.Group>
+    <FloatingLabel controlId="floatingTextarea2" label="Comments">
+        <Form.Control
+          as="textarea"
+          placeholder="Leave a comment here"
+          style={{ height: '100px' }}
+        />
+    </FloatingLabel>
+    <div className='App'>
+      <h1>CKEditor in React</h1>
+      <CKEditor editor={ClassicEditor}/>
+    </div>
 </Form>
   )
 }
