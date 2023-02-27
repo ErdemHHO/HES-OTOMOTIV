@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+@media (max-width: 762px) {
+	.baslik1{
+		display: none;
+	}
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .araba{
+		transform: translateX(1000px);
+		transition: transform 250ms ease-in-out;
+	}
+	html:hover .araba{
+		transform: translateX(300px);
+		transition: all 5s;
+	}	
+  }
+#navbar{
+    display: block;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+#navbar.shadow {
+	background: var(--bg-color);
+	box-shadow: 0 0.1rem 0.7rem rgba(0, 0, 0, 0.2);
+}
+#navbar .baslik1{
+	font-size: x-large;
+	color: #02548C;
+}
+#navbar .baslik2{
+	font-size:20px;
+	color: #D90329;
+}
+#navbar .nav-link{
+	color: #02548C;
+	border-bottom: 0.2rem solid var(--main-color);
+}
+#navbar .nav-link:hover{
+	color: #D90329;
+	border-bottom: 0.2rem solid #D90329;
+}
+.whatsapp{
+	color: green !important;
+}
+.whatsapp:hover{
+	border-bottom: 0.2rem solid green !important;
+}
+.logo{
+	animation: slideIn 3s ease forwards;
+	opacity: 0;
+	transform: translateX(-100%);
+	height: 61px;
+}
+  @keyframes slideIn {
+	0% {
+	  opacity: 0;
+	  transform: translateX(-100%);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateX(0%);
+	}
+  }
+
+
+
+  .home {
+	width: 100%;
+	min-height: 300px;
+	display: flex;
+	align-items: center;
+	background-image: url('./img/logo/bmwback.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center left;
+}
+
+.bmwCar {
+	animation: slide-in 3s ease-out; /* 1 saniyede sağdan sola kaydır */
+  }
+  
+  @keyframes slide-in {
+	from {
+	  transform: translateX(100%); /* başlangıçta sağda olsun */
+	}
+	to {
+	  transform: translateX(0); /* bitişte ortada olsun */
+	}
+  }

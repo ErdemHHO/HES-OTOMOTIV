@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
-function HeaderAdmin() {
+function AdminNavbar() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='p-3'>
       <Container>
@@ -43,4 +43,4 @@ function HeaderAdmin() {
   )
 }
 
-export default HeaderAdmin
+export default AdminNavbar

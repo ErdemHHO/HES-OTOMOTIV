@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-function CategoryForm() {
+function AdminCategoryForm() {
   return (
     <Form className='p-3'>
       <h5 className="text-center">Kategori Ekleyin</h5>
@@ -34,4 +34,4 @@ function CategoryForm() {
   )
 }
 
-export default CategoryForm
+export default AdminCategoryForm

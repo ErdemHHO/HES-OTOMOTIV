@@ -1,22 +1,22 @@
 import React from 'react'
-import NavbarAdmin from '../components/NavbarAdmin'
-import HeaderAdmin from '../components/HeaderAdmin'
+import AdminNavbarAdmin from '../components/AdminNavbarAdmin'
+import AdminNavbar from '../components/AdminNavbar'
 import '../navbarAdmin.css'
-import CategoryForm from '../components/CategoryForm'
-import SeriesForm from '../components/SeriesForm'
-import CarForm from '../components/CarForm'
-import Tables from '../components/Tables'
+import AdminCategoryForm from '../components/AdminCategoryForm'
+import AdminSeriesForm from '../components/AdminSeriesForm'
+import AdminCarForm from '../components/AdminCarForm'
+import AdminTables from '../components/AdminTables'
 // import CkEditor from '../components/CkEditor'
 
 function Admin() {
   return (
     <div>
-        <HeaderAdmin />
-        <NavbarAdmin />
-        <CategoryForm/>
-        <SeriesForm />
-        <CarForm />
-        <Tables />
+        <AdminNavbar />
+        <AdminNavbarAdmin />
+        <AdminCategoryForm/>
+        <AdminSeriesForm />
+        <AdminCarForm />
+        <AdminTables />
         {/* <CkEditor /> */}
     </div>
   )

@@ -1,11 +1,11 @@
 import React from 'react'
 import '../navbarAdmin.css'
 
-function NavbarAdmin() {
+function AdminNavbarAdmin() {
   return (
     <div/>
 
   )
 }
 
-export default NavbarAdmin
+export default AdminNavbarAdmin

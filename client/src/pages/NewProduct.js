@@ -1,14 +1,12 @@
 import React from 'react'
-import NavbarAdmin from '../components/NavbarAdmin'
-import HeaderAdmin from '../components/HeaderAdmin'
-import ProductForm from '../components/ProductForm'
+import AdminNavbar from '../components/AdminNavbar'
+import AdminProductForm from '../components/AdminProductForm'
 
 function NewProduct() {
   return (
     <div>
-        <HeaderAdmin />
-        <NavbarAdmin />
-        <ProductForm/>
+        <AdminNavbar />
+        <AdminProductForm/>
     </div>
   )
 }

@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-function CarForm() {
+function AdminCarForm() {
   return (
     <Form className='p-3'>
         <h5 className="text-center">Araba Kasa Tipi Ekleyin</h5>
@@ -43,4 +43,4 @@ function CarForm() {
   )
 }
 
-export default CarForm
+export default AdminCarForm

@@ -1,0 +1,11 @@
+.dropdown-toggle {
+    border-radius: 0 !important;
+    border: 0 !important;
+    width: 200px !important;
+    height: 50px ;
+    background-color: #fff;
+    color: #000;
+  }
+  .dropdown-toggle:hover{
+    background-color: #04558C;
+  }

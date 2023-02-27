@@ -38,7 +38,7 @@ const paginationOptions = {
   selectAllRowsItemText: 'Tüm satırları seç',
 };
 
-const DataTables = () => {
+const AdminDataTables = () => {
   return (
     <DataTable 
       title="Örnek Datatable"
@@ -52,4 +52,4 @@ const DataTables = () => {
   );
 };
 
-export default DataTables;
+export default AdminDataTables;
