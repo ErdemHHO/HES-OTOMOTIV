@@ -16,23 +16,60 @@
 		transition: all 5s;
 	}	
   }
-#navbar{
-    display: block;
-	width: 100%;
+
+h1{
+	font-size: 45px;
+	color: #012d79;
+}  
+ul {
+	list-style-type: none;
+}
+ul li{
+	color: darkgrey;
+}
+ul li:hover{
+	color:#D90329;
+}
+.whatsappButton{
+	background-color: #4BCA59;
 	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 10;
+	bottom: 20px; /* Alt kenardan 20px yukarıda */
+	right: 20px; /* Sağ kenardan 20px içeride */
+	z-index: 1000;
+	border-radius: 20px;
+	transition: transform 1s ease-in-out;
 }
-#navbar.shadow {
-	background: var(--bg-color);
-	box-shadow: 0 0.1rem 0.7rem rgba(0, 0, 0, 0.2);
+.whatsappButton:hover{
+	transform: scale(1.1);
 }
-#navbar .baslik1{
+.whatsappButton2{
+	background-color: #4BCA59;
+	position: fixed;
+	bottom: 20px; /* Alt kenardan 20px yukarıda */
+	right: 20px; /* Sağ kenardan 20px içeride */
+	z-index: 1000;
+	border-radius: 20px;
+	transition: transform 1s ease-in-out;
+}
+.whatsappButton2:hover{
+	transform: scale(1.1);
+}
+.header{
+	background-color: #036db4;
+}
+.icon {
+	font-size: 2rem;
+	transition: transform 0.2s ease-in-out;
+  }
+  
+.icon:hover {
+transform: scale(1.2);
+}
+.baslik1{
 	font-size: x-large;
 	color: #02548C;
 }
-#navbar .baslik2{
+.baslik2{
 	font-size:20px;
 	color: #D90329;
 }
@@ -66,12 +103,26 @@
 	  transform: translateX(0%);
 	}
   }
+  
+  .logo2{
+	animation: stideOn 3s ease forwards;
+	opacity: 0;
+	height: 65px;
+}
+  @keyframes stideOn {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
 
 
 
   .home {
 	width: 100%;
-	min-height: 300px;
+	min-height: 400px;
 	display: flex;
 	align-items: center;
 	background-image: url('./img/logo/bmwback.png');
@@ -92,3 +143,165 @@
 	  transform: translateX(0); /* bitişte ortada olsun */
 	}
   }
+
+.bmwCar2{
+	animation: slide-in 3s ease-out;
+	width: 250px;
+}	
+@keyframes slide-in {
+	from {
+	transform: translateX(100%); /* başlangıçta sağda olsun */
+	}
+	to {
+	transform: translateX(0); /* bitişte ortada olsun */
+	}
+}
+
+.alternatifLogo{
+	animation: slide-in 3s ease-out;
+	width: 250px;
+}
+	@keyframes slide-in {
+		from {
+		transform: translateX(100%); /* başlangıçta sağda olsun */
+		}
+		to {
+		transform: translateX(0); /* bitişte ortada olsun */
+		}
+	}
+
+
+.slick-prev, .slick-next {
+  background-color: red;
+}
+
+.sliderrr {
+	position: relative;
+	width: 100%;
+	height: 120px;
+	border: 2px;
+	border-color: #111111;
+  }
+  
+ .sliderrr img {
+	width: 100%;
+	height: 100%;
+	display: block;
+  }
+  
+
+.hesLogo1{
+	transform: translateY(100px);
+	width: 200px;
+}
+.baslik{
+	transform: translateY(100px);
+}
+.logoFooter{
+	width: 200px;
+}
+.bg-footer{
+	background-color: #111111;
+}
+.Designed-By:hover{
+	color:#ffd700;
+}
+.whatsapp{
+	color: green;
+}
+.instagram{
+	color:#F601C1;
+}
+.sahibinder{
+	color:#ffd700;
+}
+
+
+/* =========================== PARTS =============================== */
+.parts__container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+.parts__container .box {
+	flex: 1 1 17rem;
+	position: relative;
+	padding: 1.2rem;
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+	border-radius: 0.5rem;
+}
+
+.parts__container .box img {
+	width: 100%;
+	height: 10rem;
+	object-fit: contain;
+	object-position: center;
+	margin-bottom: 1rem;
+}
+
+.parts__container .box h3 {
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+.parts__container .box span {
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: var(--main-color);
+}
+
+.parts__container .box p {
+	color: var(--main-color);
+	font-size: 0.9rem;
+	font-family: inherit;
+	margin-bottom: 1rem;
+}
+
+.parts__container .box .stars {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.8rem;
+}
+
+.parts__container .box .stars i {
+	color: #ffd700;
+	margin-right: 0.2rem;
+	font-size: 0.8rem;
+}
+
+.buttons {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border: #000 10px !important;
+}
+
+.parts__container .box .details {
+	display: inline-block;
+	padding: 0.8rem 1.6rem;
+	color: var(--text-color);
+	border: 0.4rem solid var(--text-color);
+}
+
+.parts__container .box .details:hover {
+	color: var(--main-color);
+	border: 0.1rem solid var(--main-color);
+}
+.box .buy {
+	display: inline-block;
+	padding: 0.8rem 1.6rem ;
+	color: var(--text-color);
+	border: 0.1rem solid var(--text-color);
+}
+.box .buy:hover {
+	color: #05f545;
+	border: 0.1rem solid #05f545 ;
+}
+.part-text{
+    color: #000 !important;
+}
+

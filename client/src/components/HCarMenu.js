@@ -98,6 +98,17 @@ function HCarMenu() {
           Menu 2 - Item 3
         </Dropdown.Item>
       </DropdownButton>
+      <DropdownButton title="X Serisi" drop="end" variant="primary" align="end" direction="up"  className='menuButton'>
+        <Dropdown.Item onClick={() => handleItemClick('Menu 2 - Item 1')}>
+          Menu 2 - Item 1
+        </Dropdown.Item>
+        <Dropdown.Item onClick={() => handleItemClick('Menu 2 - Item 2')}>
+          Menu 2 - Item 2
+        </Dropdown.Item>
+        <Dropdown.Item onClick={() => handleItemClick('Menu 2 - Item 3')}>
+          Menu 2 - Item 3
+        </Dropdown.Item>
+      </DropdownButton>
       <DropdownButton title="MINI COOPER" drop="end" variant="primary" align="end" direction="up" className='menuButton'>
         <Dropdown.Item onClick={() => handleItemClick('Menu 2 - Item 1')}>
           Menu 2 - Item 1

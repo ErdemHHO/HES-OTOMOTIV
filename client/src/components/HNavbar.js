@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -7,9 +9,43 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 
 function HNavbar() {
+  const myComponentStyles = {
+    display: "block",
+    width: "100%",
+    position: "fixed",
+    top: "0",
+    left: "0",
+    zIndex: "10",
+    backgroundColor: "#fff",
+    boxShadow: "0 4px 4px -2px rgba(0,0,0,0.2), 0 2px 8px 0 rgba(0,0,0,0.14), 0 6px 10px 0 rgba(0,0,0,0.12)",
+    marginTop: "75px",
+    transition: "margin-top 0.4s ease-in-out"
+  };
+  const [myStyles, setMyStyles] = useState(myComponentStyles);
+
+  useEffect(() => {
+    if (window.matchMedia('(min-width: 1200px)').matches) {
+      function handleScroll() {
+        const newStyles = {
+          ...myComponentStyles,
+          marginTop: window.scrollY > 30 ? '0px' : '75px',
+        };
+        setMyStyles(newStyles);
+      }
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    } else {
+      // if the screen size is smaller than xl, set marginTop to 0
+      setMyStyles({ ...myComponentStyles, marginTop: '0' });
+    }
+
+  }, []);
   return (
-    <Navbar expand="xl" className='p-3 text-center justify-content-center ' id='navbar'>
-      <Container>
+    <div>
+      <Navbar style={myStyles} expand="xl"className='p-3 text-center justify-content-center header navbar ' id='navbar'>
+      <Container className='nav'>
         <Navbar.Brand href="#home">
           <img src="/img/logo/HES-OTOMOTİV-LOGO.png" alt="Logo" className='logo'/>
           <span className='baslik1'><strong>HES OTOMOTİV </strong> </span> {' '}
@@ -22,7 +58,7 @@ function HNavbar() {
             <Nav.Link href="#link" className='nav-link'>Hakkımızda</Nav.Link>
             <Nav.Link href="#link" className='nav-link'>İletişim</Nav.Link>
             <Nav.Link href="#link" className='nav-link'>Ürünlerimiz</Nav.Link>
-            <Nav.Link href="#link" className='nav-link whatsapp'>Whatsapp <FaWhatsapp size={24} /> </Nav.Link>
+            <Nav.Link href="#link" className='nav-link whatsapp'>Whatsapp <FaWhatsapp size={24} className='icon' /> </Nav.Link>
           </Nav>
           <Form className="d-flex">
               <Form.Control
@@ -35,7 +71,9 @@ function HNavbar() {
           </Form>
         </Navbar.Collapse>
       </Container>
-    </Navbar>
+      </Navbar>
+    </div>
+
   );
 }
 
