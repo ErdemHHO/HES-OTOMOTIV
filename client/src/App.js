@@ -1,8 +1,8 @@
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import Admin from './pages/Admin';
-import Categories from './pages/Categories';
-import Homepage from './pages/Homepage';
-import NewProduct from './pages/NewProduct';
+import Admin from './pages/admin/Admin';
+import Categories from './pages/admin/Categories';
+import Homepage from './pages/user/Homepage';
+import NewProduct from './pages/admin/NewProduct';
 import './App.css'; 
 
 
