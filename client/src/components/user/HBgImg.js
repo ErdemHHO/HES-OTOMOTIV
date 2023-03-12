@@ -8,7 +8,7 @@ function HBgImg() {
         <Container className='d-none d-xl-flex' >
           <Row>
             <Col sm={4}>
-              <img src="/img/logo/HES-OTOMOTİV-LOGO1.png" alt="" className='hesLogo1'></img>
+              <img src="/img/logo/HES-OTOMOTIV-LOGO1.png" alt="" className='hesLogo1'></img>
             </Col>
             <Col className='baslik' sm={8}>
               <h5 className='text-decoration-underline'><strong>BMW MINI COOPER YEDEK PARÇALARI</strong></h5>

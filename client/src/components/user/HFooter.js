@@ -11,7 +11,7 @@ function HFooter() {
                 <Col md={6}>
                     <Row>
                         <Col md={4}>
-                            <img src="/img/logo/HES-OTOMOTİV-LOGO1-1.svg" alt="Logo" className='logoFooter'/>
+                            <img src="/img/logo/HES-OTOMOTIV-LOGO1-1.svg" alt="Logo" className='logoFooter'/>
                         </Col>
                         <Col md={8}>
                             <h4 className='baslik1'><strong>HES OTOMOTİV</strong></h4>

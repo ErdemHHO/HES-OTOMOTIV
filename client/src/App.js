@@ -5,8 +5,8 @@ import Homepage from './pages/user/Homepage';
 import NewProduct from './pages/admin/NewProduct';
 import './App.css'; 
 
-
 function App() {
+
   return (
     <BrowserRouter>
       <Routes>

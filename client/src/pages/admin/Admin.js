@@ -4,16 +4,18 @@ import '../../navbarAdmin.css'
 import AdminCategoryForm from '../../components/admin/AdminCategoryForm'
 import AdminSeriesForm from '../../components/admin/AdminSeriesForm'
 import AdminCarForm from '../../components/admin/AdminCarForm'
-import AdminTables from '../../components/admin/AdminTables'
+import AdminCategoriesTables from '../../components/admin/AdminCategoriesTables'
+
 
 function Admin() {
+
   return (
     <div>
         <AdminNavbar />
         <AdminCategoryForm/>
         <AdminSeriesForm />
         <AdminCarForm />
-        <AdminTables />
+        <AdminCategoriesTables />
         {/* <CkEditor /> */}
     </div>
   )

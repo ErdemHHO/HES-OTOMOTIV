@@ -47,7 +47,7 @@ function HNavbar() {
       <Navbar style={myStyles} expand="xl"className='p-3 text-center justify-content-center header navbar ' id='navbar'>
       <Container className='nav'>
         <Navbar.Brand href="#home">
-          <img src="/img/logo/HES-OTOMOTİV-LOGO.png" alt="Logo" className='logo'/>
+          <img src="/img/logo/HES-OTOMOTIV-LOGO.png" alt="Logo" className='logo'/>
           <span className='baslik1'><strong>HES OTOMOTİV </strong> </span> {' '}
           <span className='baslik2'><strong>BMW MINI YEDEK PARÇALARI</strong></span>
         </Navbar.Brand>
